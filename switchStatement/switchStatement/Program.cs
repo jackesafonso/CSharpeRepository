@@ -10,17 +10,15 @@ namespace switchStatement
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Ronaldo, Suarez, Neymar, Ronaldo are running for best football player in the world who do you think will win?");
-            string input;
-
-            do
-            {
-                Console.WriteLine("Who will win? choose between: neymar, suarez, messi, ronaldo");
-                input = Console.ReadLine();
+            
+            
+            
+                Console.Write("Who will win? choose between: neymar, suarez, messi, ronaldo");
+               string input = Console.ReadLine();
 
 
 
-            switch (input)
+                  switch (input)
                 {
                     case "neymar":
                     case "messi":
@@ -30,7 +28,14 @@ namespace switchStatement
 
                     case "ronaldo":
 
-                        Console.WriteLine("No good enough");
+                
+
+                      Console.WriteLine("No good enough");
+
+                        break;
+                case "suarez":
+
+                       Console.Write("He is one of the best striker in the world");
 
                         break;
 
@@ -39,9 +44,9 @@ namespace switchStatement
 
                         break;
                 }
-            } while (input != "i dont know");
+             
     
-            Console.WriteLine("Press a key to exit.");
+            
             Console.ReadLine();
         }
     }
